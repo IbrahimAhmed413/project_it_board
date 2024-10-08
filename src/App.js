@@ -3,14 +3,9 @@ import Login from "./components/login";
 import UsersTable from "./components/userTable";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [LoggedIn, setLoggedIn] = useState(false);
 
-  return (
-    <div>
-      {!isLoggedIn ? (<Login Login={setIsLoggedIn} />) : (<UsersTable />
-      )}
-    </div>
-  );
+  return <>{!LoggedIn ? <Login Login={setLoggedIn} /> : <UsersTable />}</>;
 }
 
 export default App;
