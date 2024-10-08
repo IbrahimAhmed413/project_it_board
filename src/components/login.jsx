@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { useState } from "react";
 
-function Login({ Login }) {
+export default function Login({ Login }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -40,4 +40,4 @@ function Login({ Login }) {
   );
 }
 
-export default Login;
+
