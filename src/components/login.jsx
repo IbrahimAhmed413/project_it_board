@@ -1,37 +1,42 @@
+import React from 'react';
+import '../App.css';
 import { useState } from "react";
 
-function Login({ onLogin }) {
+function Login({ Login }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "password") {
-      onLogin(true); // Allow login
+    if (username === "ibrahim" && password === "chalog") {
+      Login(true); // Allow login
     } else {
       alert("Invalid credentials");
     }
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <>
+        <h2>Login Page</h2>
+      <form className='formlogin' onSubmit={handleSubmit}>
         <input
+          className='inputlogin'
           type="text"
-          placeholder="Username"
+          placeholder="Enter Your Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
+      <br/>
         <input
+          className='inputlogin'
           type="password"
-          placeholder="Password"
+          placeholder="Enter your Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Login</button>
+        /><br/>
+        <button type="submit" className='button'>Sign In</button>
       </form>
-    </div>
+      </>
   );
 }
 

@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 
 function UserForm({ onAddUser, onUpdateUser, editingUser, setEditingUser }) {
   const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
-    phone: "",
-    address: ""
+    firstName: " ", lastName: " ", phone:" ", address:" "
   });
 
   useEffect(() => {
@@ -31,22 +28,25 @@ function UserForm({ onAddUser, onUpdateUser, editingUser, setEditingUser }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="userform">
       <input
         type="text"
+        className="firstnamebox"
         placeholder="First Name"
         value={user.firstName}
         onChange={(e) => setUser({ ...user, firstName: e.target.value })}
         required
-      />
+      /> 
       <input
+       className="firstnamebox"
         type="text"
         placeholder="Last Name"
         value={user.lastName}
         onChange={(e) => setUser({ ...user, lastName: e.target.value })}
         required
       />
-      <inpu
+      <input 
+         className="firstnamebox"
         type="text"
         placeholder="Phone"
         value={user.phone}
@@ -54,6 +54,7 @@ function UserForm({ onAddUser, onUpdateUser, editingUser, setEditingUser }) {
         required
       />
       <input
+         className="firstnamebox"
         type="text"
         placeholder="Address"
         value={user.address}

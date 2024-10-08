@@ -1,38 +1,88 @@
-.App {
+h2 {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: x-large;
+  background-color: grey;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: white;
 }
+/* login heading styles */
 
-.App-link {
-  color: #61dafb;
+.formlogin {
+  display: grid;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+/* Complete form styling */
+.inputlogin {
+  border: solid;
+  border-color: grey;
+  border-radius: 10px;
+  height: 50px;
+}
+/* input fields styles */
+.button {
+  height:40px;
+  border-radius: 10px;
+  border: none;
+  background-color: grey;
+  color: white;
+  font-size: large;
+  outline: none;
+  cursor: pointer;
+
+}
+.button:active {
+  background-color: grey ;
+  transform: translateY(1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* signin button styles */
+
+.userpagetable{
+  margin-top: 10%;
+  margin-left: 15%;
+  border: 1px solid;
+  text-align: left;
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
 }
+td{
+  border: 1px solid;
+}
+th{
+  background-color: grey;
+  color: white;
+  border: 1px solid black;
+}
+/* usertable styling */
+.userform{
+  margin-top: 2%;
+  margin-left: 20%;
+  
+  
+}
+.firstnamebox{
+  margin-right: 5px;
+  height: 20px;
+  border: 1px solid ;
+  outline: none;
+}
+button{
+  border-radius: 10px;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+button:active{
+  border-radius: 0px;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
